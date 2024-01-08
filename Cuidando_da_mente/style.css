@@ -24,9 +24,10 @@ img {
     background-position: center; /* Centraliza a imagem de fundo */
     color: white; /* Cor do texto */
     width: 350px; /* Largura do card */
-    height: 250px; /* Altura do card */
     margin-bottom: 30px; /* Espaçamento entre os cards */
 }
+
+
 
 /* Ajustes para os cards dentro das colunas */
 .col-md-6.col-lg-4 {
@@ -40,7 +41,7 @@ img {
     left: 50%; /* Posiciona no meio horizontalmente */
     transform: translateX(-50%); /* Centraliza perfeitamente */
     width: 80%; /* Largura menor que o card */
-    height: 200px;
+  
     background-color: white; /* Cor de fundo */
     color: black; /* Cor do texto */
     /* Adicione padding, borda, etc., conforme necessário */
@@ -262,4 +263,24 @@ img {
 .card-produtos .card-body-produto {
     padding: 15px; /* Espaço interno para o texto */
     /* Adicione estilos adicionais para o texto, se necessário */
+}
+.read-more-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+.card-text-hidden {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }

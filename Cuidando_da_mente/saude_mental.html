@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+
     <title>Cuidando da mente</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
@@ -14,7 +17,8 @@
                 <img src="./imagens/logo.png" alt="Logo" class="d-inline-block align-top">
                 <h3>Cuidando da Mente</h3>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -49,21 +53,68 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title"> Um Guia Informativo e Acolhedor</h5>
-                            <p class="card-text">A saúde mental é um componente vital do nosso bem-estar geral, e é fundamental entender e priorizar esse 
-                                aspecto crucial da nossa vida. 
+                            <p class="card-text card-text-hidden" id="card-text-1">
+                                A saúde mental é um componente vital do nosso bem-estar geral, e
+                                é fundamental entender e priorizar esse aspecto crucial da nossa vida.
+                                Nosso guia informativo busca oferecer conhecimentos essenciais
+                                e dicas práticas para apoiar sua jornada de cuidado mental.
+                            </p>
+                            <button class="btn btn-link read-more-btn" onclick="toggleText(1)">Ler Mais</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Título do Card</h5>
-                            <p class="card-text">Descrição...</p>
+                            <h5 class="card-title"> Uma Jornada para a Saúde da Mente</h5>
+                            <p class="card-text card-text-hidden" id="card-text-2">
+                                A saúde mental é um aspecto fundamental do nosso bem-estar global, influenciando
+                                diretamente nossa capacidade de enfrentar os desafios da vida, construir relacionamentos
+                                significativos e vivenciar uma sensação geral de felicidade. Assim como cuidamos do nosso
+                                corpo, dedicar atenção à saúde mental é crucial para uma vida equilibrada e plena.
+                                A mente saudável se revela através de emoções equilibradas, resiliência diante das
+                                adversidades e conexões interpessoais satisfatórias. No entanto, compreender
+                                e abordar os diversos fatores que afetam a saúde mental é essencial. Elementos como genética,
+                                experiências de vida, ambiente e equilíbrio químico desempenham papéis interligados,
+                                exigindo uma abordagem holística para o autocuidado.
+                                A importância do autocuidado na manutenção da saúde mental não pode ser subestimada.
+                                Incorporar práticas como exercícios regulares, uma boa qualidade de sono e momentos de lazer
+                                na rotina diária contribui significativamente para a promoção do equilíbrio emocional. Além disso,
+                                estratégias como a prática de mindfulness e a busca por conexões sociais fortalecem a resiliência mental.
+                                Reconhecer a necessidade de suporte profissional é um passo corajoso na jornada da saúde mental.
+                                Psicólogos, terapeutas e outros profissionais estão disponíveis para oferecer orientação especializada,
+                                proporcionando ferramentas e estratégias adaptadas às necessidades individuais.
+                                No dia a dia, pequenas ações fazem uma grande diferença. Incorporar pausas para respirar, momentos de
+                                reflexão e expressar gratidão são maneiras simples de nutrir a saúde mental. Este guia busca fornecer uma
+                                compreensão compassiva da importância de cuidar da mente. Lembre-se, priorizar sua saúde mental é um ato
+                                de amor próprio que contribui para uma vida mais plena e significativa.
+                            </p>
+                            <button class="btn btn-link read-more-btn" onclick="toggleText(2)">Ler Mais</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <script>
+        function toggleText(cardId) {
+            var cardText = document.getElementById('card-text-' + cardId);
+            cardText.classList.toggle('card-text-hidden');
+            var readMoreBtn = document.querySelector('.read-more-btn');
+            readMoreBtn.innerText = readMoreBtn.innerText === 'Ler Mais' ? 'Ler Menos' : 'Ler Mais';
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
+
+
+
+
+
+   
