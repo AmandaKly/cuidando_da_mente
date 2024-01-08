@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,400&display=swap');
+
+*{
+    border-radius: 5px;
+}
+body {
+    background-color: #C8F4F6; /* Fundo claro */
+    font-family: 'Happy Monkey', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #020F51; /* Texto escuro para contraste */
+    font-family: 'Happy Monkey', cursive;
+    padding: 10px;
+}
+
+img {
+    width: 15%
+}
+
+.card {
+    position: relative;
+    background-size: cover; /* Ajusta a imagem para cobrir todo o card */
+    background-position: center; /* Centraliza a imagem de fundo */
+    color: white; /* Cor do texto */
+    width: 350px; /* Largura do card */
+    height: 250px; /* Altura do card */
+    margin-bottom: 30px; /* Espaçamento entre os cards */
+}
+
+/* Ajustes para os cards dentro das colunas */
+.col-md-6.col-lg-4 {
+    display: flex;
+    justify-content: center; /* Centraliza o card na coluna */
+    margin-bottom: 20px; /* Espaçamento entre as linhas de cards */
+}
+ .card-body {
+    position: absolute; /* Posiciona de forma absoluta dentro do card */
+    top: 10px; /* Espaçamento do topo */
+    left: 50%; /* Posiciona no meio horizontalmente */
+    transform: translateX(-50%); /* Centraliza perfeitamente */
+    width: 80%; /* Largura menor que o card */
+    height: 200px;
+    background-color: white; /* Cor de fundo */
+    color: black; /* Cor do texto */
+    /* Adicione padding, borda, etc., conforme necessário */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+ }
+/* Media query para ajustes em telas menores */
+@media (max-width: 992px) {
+    .col-md-6.col-lg-4 {
+        flex: 0 0 50%; /* Dois cards por linha em telas médias */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-6.col-lg-4 {
+        flex: 0 0 100%; /* Um card por linha em telas pequenas */
+        max-width: 100%;
+    }
+}
+
+#card1 {
+    background-image: url('./imagens/card1.png');
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#card2 {
+    background-image: url('./imagens/card2.png');
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#card3 {
+    background-image: url('./imagens/card3.png');
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items:start;
+}
+
+.opacidade-texto{
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+#container-opacidade {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #f1ffff;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.container-produto {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #f1ffff;
+    justify-content: flex-end;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-right {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 50%; /* Empurra o container para começar da metade da página para a direita */
+    max-width: 50%; /* Opcional: limita a largura do container para a metade da página */
+    /* Outros estilos que você desejar aplicar */
+}
+
+.navbar {
+    width: 100%;
+    background-color: #006A74; /* Verde calmo */
+    display: flex; /* Torna a navbar um container flexível */
+    justify-content: space-between; /* Espaço entre o logo e o menu */
+    align-items: center; /* Alinhar itens verticalmente */
+}
+
+.collapse.navbar-collapse {
+    justify-content: center;
+    flex-grow: 1; /* Permite que a div ocupe o espaço disponível */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-collapse {
+    flex: 2; /* Dá mais espaço para os links da navbar */
+    display: flex;
+    justify-content: center; /* Centraliza os links da navbar */
+}
+
+.navbar-nav {
+    display: flex; /* Para alinhar os itens da nav horizontalmente */
+}
+
+.nav-link {
+    color: white; /* Cor do link */
+    text-align: center;
+    padding-bottom: 5px; /* Espaço abaixo do texto do link */
+    transition: border-bottom 0.3s; /* Transição suave para o traço */
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid white; /* Traço embaixo do link ao passar o mouse */
+}
+
+.navbar-brand {
+    flex: 1; /* A logo pode crescer para ocupar espaço */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha a logo para o início (esquerda) */
+}
+
+.navbar-brand img {
+    max-width: 100px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    text-align: center;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+#home-background {
+    background-image: url('imagens/Home.png');
+    background-size: cover; /* Faz a imagem cobrir todo o espaço disponível */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    min-height: 80vh; /* Define uma altura mínima para o elemento */
+    width: 100%;
+    padding: 25px;
+}
+
+#contato-background {
+    background-image: url('imagens/inicio.png');
+    background-size: cover; /* Faz a imagem cobrir todo o espaço disponível */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    min-height: 80vh; /* Define uma altura mínima para o elemento */
+    width: 100%;
+    padding: 25px;
+}
+
+#sobre-background {
+    background-image: url('imagens/outras.png');
+    background-size: cover; /* Faz a imagem cobrir todo o espaço disponível */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    min-height: 80vh; /* Define uma altura mínima para o elemento */
+    width: 100%;
+    padding: 25px;
+}
+
+#saude_mental-background {
+    background-image: url('imagens/outras.png');
+    background-size: cover; /* Faz a imagem cobrir todo o espaço disponível */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    min-height: 80vh; /* Define uma altura mínima para o elemento */
+    width: 100%;
+    padding: 25px;
+}
+
+#produtos-background {
+    background-image: url('imagens/outras.png');
+    background-size: cover; /* Faz a imagem cobrir todo o espaço disponível */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    min-height: 80vh; /* Define uma altura mínima para o elemento */
+    width: 100%;
+    padding: 25px;
+}
+
+#div-titulo {
+    background-color:rgb(255, 255, 255);
+    padding-bottom: 5%;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#titulo {
+    text-align:center;
+    background-color:#f1ffff;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-produtos {
+    flex:1;
+    width: 100%; /* Largura do card */
+    overflow: hidden; /* Garante que nada saia dos limites do card */
+    border-radius: 10px; /* Bordas arredondadas para o card */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para um efeito elevado */
+    background-color: #fff; /* Fundo branco para o corpo do card */
+    margin-bottom: 30px; /* Espaço abaixo do card */
+    justify-content: space-between; /* Espaço entre o topo e o fundo */
+}
+
+.card-produtos .card-img-top {
+    width: 100px; /* Largura da imagem */
+    height: auto; /* Altura automática para manter a proporção */
+    object-fit: cover; /* Garante que a imagem cubra o espaço disponível */
+}
+
+.card-produtos .card-body-produto {
+    padding: 15px; /* Espaço interno para o texto */
+    /* Adicione estilos adicionais para o texto, se necessário */
+}
