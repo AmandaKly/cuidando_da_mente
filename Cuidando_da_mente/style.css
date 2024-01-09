@@ -54,6 +54,8 @@ img {
         flex: 0 0 50%; /* Dois cards por linha em telas médias */
         max-width: 50%;
     }
+
+    
 }
 
 @media (max-width: 768px) {
@@ -61,6 +63,25 @@ img {
         flex: 0 0 100%; /* Um card por linha em telas pequenas */
         max-width: 100%;
     }
+
+    h3 {
+        font-size: 20px;
+    }
+    
+    
+
+    h1 {
+        font-size: 30px;
+
+    }
+
+    h4{
+        font-size: 20px;
+    }
+    p {
+        font-size: 12px;
+    }
+    
 }
 
 #card1 {
@@ -127,22 +148,12 @@ img {
     width: 100%;
     background-color: #006A74; /* Verde calmo */
     display: flex; /* Torna a navbar um container flexível */
-    justify-content: space-between; /* Espaço entre o logo e o menu */
+    justify-content: last baseline; /* Espaço entre o logo e o menu */
     align-items: center; /* Alinhar itens verticalmente */
 }
 
-.collapse.navbar-collapse {
-    justify-content: center;
-    flex-grow: 1; /* Permite que a div ocupe o espaço disponível */
-    display: flex;
-    align-items: center;
-}
 
-.navbar-collapse {
-    flex: 2; /* Dá mais espaço para os links da navbar */
-    display: flex;
-    justify-content: center; /* Centraliza os links da navbar */
-}
+
 
 .navbar-nav {
     display: flex; /* Para alinhar os itens da nav horizontalmente */
@@ -284,3 +295,4 @@ img {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
+
