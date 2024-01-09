@@ -13,7 +13,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Happy Monkey', cursive;
     padding: 10px;
 }
-
+#logo{
+    color:#fff;
+}
 img {
     width: 15%
 }
@@ -190,7 +192,7 @@ img {
 
 .navbar {
     width: 100%;
-    background-color: #006A74; /* Verde calmo */
+/* Verde calmo */
     display: flex; /* Torna a navbar um container flexível */
     justify-content: last baseline; /* Espaço entre o logo e o menu */
     align-items: center; /* Alinhar itens verticalmente */
